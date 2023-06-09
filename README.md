@@ -1,0 +1,2 @@
+# cuts
+Pedazos de codigo
