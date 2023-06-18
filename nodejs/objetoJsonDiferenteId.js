@@ -1,7 +1,7 @@
 app.get("/probando/:id", (req, res) => {
     console.log("Se ha ejecutado el endpoint probando");
 
-    // Obtenemos el parámetro "id" de la solicitud
+    // Obtenemos el parámetro "id" de la solicitud /:id
     const id = req.params.id;
 
     // Creamos un objeto JSON diferente según el valor del parámetro "id"
