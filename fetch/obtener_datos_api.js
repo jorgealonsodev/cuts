@@ -14,8 +14,20 @@ fetch('https://jsonplaceholder.typicode.com/users')
     })
     .catch(error => console.log(error));
 
+// Filtrar por expresiones regulares
 
-//Ver todos los ID o cualqueir campo que queramos
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(response => response.json())
+.then(data => {
+  let regex = /@yesenia\.net/i; // Expresión regular para filtrar emails de "@yesenia.net"
+  const emails = data.filter(elemento => regex.test(elemento.email));
+  console.log(emails);
+})
+.catch(error => console.log(error));
+
+
+
+//Ver todos los ID o cualquier campo que queramos
 
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
