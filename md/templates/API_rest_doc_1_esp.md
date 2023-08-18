@@ -73,6 +73,12 @@
 > |--------------|----------------------------------|---------------------------------------------------------------|
 > | `200`        | `text/plain;charset=UTF-8`       | Cadena YAML                                                   |
 > | `400`        | `application/json`               | `{"code":"400","message":"Solicitud incorrecta"}`             |
+##### Respuestas
+
+> | código http  | tipo de contenido                | respuesta                                                      |
+> |--------------|----------------------------------|---------------------------------------------------------------|
+> | `200`        | `text/plain;charset=UTF-8`       | Cadena YAML                                                   |
+> | `400`        | `application/json`               | `{"code":"400","message":"Solicitud incorrecta"}`             |
 
 ##### Ejemplo cURL
 
